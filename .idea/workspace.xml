@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7929a4c8-acf8-4965-9776-0186e071576e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/controller/CategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/CategoryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/CategoryMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -48,8 +44,8 @@
       <file leaf-file-name="CategoryMapper.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/tmall/mapper/CategoryMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+            <state relative-caret-position="171">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -144,6 +140,11 @@
         <option value="spring-beans.schema" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <dirStrings>
+      <dir>C:\Users\Administrator\IdeaProjects\tmall_ssm\src\main\webapp</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -422,7 +423,7 @@
       <workItem from="1556094436900" duration="4065000" />
       <workItem from="1556156494014" duration="2052000" />
       <workItem from="1556241820535" duration="2101000" />
-      <workItem from="1556418437994" duration="6700000" />
+      <workItem from="1556418437994" duration="7767000" />
     </task>
     <task id="LOCAL-00001" summary="4.28初始提交">
       <created>1556440904884</created>
@@ -456,7 +457,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14918000" />
+    <option name="totallyTimeSpent" value="15985000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -469,7 +470,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="762" y="0" width="779" height="839" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.2033195" side_tool="true" visible="true" weight="0.197479" />
@@ -491,7 +491,7 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32913166" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.7966805" visible="true" weight="0.197479" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3264177" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.4495159" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -855,8 +855,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/tmall/mapper/CategoryMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        <state relative-caret-position="171">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
