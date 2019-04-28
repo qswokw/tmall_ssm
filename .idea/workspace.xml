@@ -120,8 +120,8 @@
       <file leaf-file-name="jdbc.properties" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="133">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -310,7 +310,7 @@
       <workItem from="1556094436900" duration="4065000" />
       <workItem from="1556156494014" duration="2052000" />
       <workItem from="1556241820535" duration="2101000" />
-      <workItem from="1556418437994" duration="3350000" />
+      <workItem from="1556418437994" duration="3629000" />
     </task>
     <task id="LOCAL-00001" summary="4.28初始提交">
       <created>1556440904884</created>
@@ -344,7 +344,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11568000" />
+    <option name="totallyTimeSpent" value="11847000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -360,7 +360,7 @@
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="7" sideWeight="0.23928078" side_tool="true" visible="true" weight="0.32913166" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.2033195" side_tool="true" visible="true" weight="0.26050422" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.32918397" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
@@ -375,10 +375,10 @@
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" weight="0.32913166" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.76071924" visible="true" weight="0.32913166" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.76071924" weight="0.32913166" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32913166" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.26050422" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.7966805" visible="true" weight="0.26050422" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2821577" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -694,13 +694,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/a.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -708,10 +701,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="133">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
