@@ -2,6 +2,7 @@ package com.how2java.tmall.controller;
 
 import com.how2java.tmall.pojo.Category;
 import com.how2java.tmall.service.CategoryService;
+import com.how2java.tmall.util.Page;
 import com.sun.org.apache.xpath.internal.operations.Mod;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -17,8 +18,11 @@ public class CategoryController {
     CategoryService categoryService;
 
     @RequestMapping("admin_category_list")
-    public String list(Model model) {
-        List<Category> cs = categoryService.list();
+    public String list(Model model,Page page) {
+        List<Category> cs = categoryService.list(page);
+        int total=categoryService.total();
+        page.setTotal(total);
+        model.addAttribute("page",page);
         model.addAttribute("cs", cs);
         return "admin/listCategory";
     }
