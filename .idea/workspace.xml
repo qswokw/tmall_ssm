@@ -7,12 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7929a4c8-acf8-4965-9776-0186e071576e" name="Default" comment="测试pull">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/controller/CategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/mapper/CategoryMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/mapper/CategoryMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/service/CategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/service/impl/CategoryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/CategoryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/CategoryMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/util/ImageUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/util/ImageUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/util/UploadedImageFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/util/UploadedImageFile.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -42,8 +39,8 @@
       <file leaf-file-name="CategoryMapper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/tmall/mapper/CategoryMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+            <state relative-caret-position="114">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -63,11 +60,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CategoryController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/tmall/controller/CategoryController.java">
+      <file leaf-file-name="TestTmall.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/tmall/test/TestTmall.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="53" column="47" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
+            <state relative-caret-position="380">
+              <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImageUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/tmall/util/ImageUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -75,11 +81,53 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CategoryMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/CategoryMapper.xml">
+      <file leaf-file-name="Page.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/tmall/util/Page.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" column="43" lean-forward="true" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
+            <state relative-caret-position="-437">
+              <caret line="4" column="21" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UploadedImageFile.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/tmall/util/UploadedImageFile.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+              <folding>
+                <element signature="e#186#187#0" expanded="true" />
+                <element signature="e#214#215#0" expanded="true" />
+                <element signature="e#263#264#0" expanded="true" />
+                <element signature="e#297#298#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CategoryController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/tmall/controller/CategoryController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="267">
+              <caret line="51" column="68" selection-start-line="51" selection-start-column="68" selection-end-line="51" selection-end-column="68" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Category.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/tmall/pojo/Category.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+              <folding>
+                <element signature="e#136#137#0" expanded="true" />
+                <element signature="e#163#164#0" expanded="true" />
+                <element signature="e#203#204#0" expanded="true" />
+                <element signature="e#258#259#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -87,7 +135,7 @@
       <file leaf-file-name="CategoryServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/tmall/service/impl/CategoryServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
+            <state relative-caret-position="271">
               <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -100,47 +148,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="applicationContext.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-38">
-              <caret line="46" column="58" selection-start-line="46" selection-start-column="58" selection-end-line="46" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="listCategory.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/listCategory.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="312">
               <caret line="48" column="55" lean-forward="true" selection-start-line="48" selection-start-column="55" selection-end-line="48" selection-end-column="76" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jdbc.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="springMVC.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/springMVC.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4">
-              <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="adminPage.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/include/admin/adminPage.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-38">
-              <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -184,14 +196,14 @@
         <option value="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/include/admin/listCategory.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/how2java/tmall/util/Page.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/how2java/tmall/util/UploadedImageFile.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/how2java/tmall/util/ImageUtil.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/listCategory.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/CategoryMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/how2java/tmall/mapper/CategoryMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/how2java/tmall/service/CategoryService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/how2java/tmall/service/impl/CategoryServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/how2java/tmall/controller/CategoryController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/how2java/tmall/util/ImageUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/how2java/tmall/util/UploadedImageFile.java" />
       </list>
     </option>
   </component>
@@ -229,7 +241,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="958" />
     <option name="width" value="968" />
     <option name="height" value="1049" />
@@ -706,7 +718,7 @@
       <workItem from="1556418437994" duration="11710000" />
       <workItem from="1556457263598" duration="1914000" />
       <workItem from="1556459287877" duration="13000" />
-      <workItem from="1556525337170" duration="13764000" />
+      <workItem from="1556525337170" duration="14296000" />
     </task>
     <task id="LOCAL-00001" summary="4.28初始提交">
       <created>1556440904884</created>
@@ -740,7 +752,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35619000" />
+    <option name="totallyTimeSpent" value="36151000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -752,7 +764,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="663" y="0" width="878" height="839" extended-state="0" />
+    <frame x="-6" y="-6" width="1549" height="846" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -762,7 +774,7 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.09367397" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.05157401" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -774,10 +786,10 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" weight="0.32913166" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.76071924" weight="0.32913166" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7970529" weight="0.60084033" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7970529" weight="0.44957983" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32913166" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.7966805" visible="true" weight="0.22969188" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17031631" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.7966805" visible="true" weight="0.23439667" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29336905" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -1072,13 +1084,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/a.txt" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/hh.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/tmall/test/TestTmall.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/include/admin/adminHeader.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -1086,70 +1091,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/tmall/pojo/Category.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
-          <folding>
-            <element signature="e#136#137#0" expanded="true" />
-            <element signature="e#163#164#0" expanded="true" />
-            <element signature="e#203#204#0" expanded="true" />
-            <element signature="e#258#259#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/include/admin/adminNavigator.jsp">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/tmall/util/Page.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="21" />
-          <folding>
-            <element signature="e#176#177#0" expanded="true" />
-            <element signature="e#204#205#0" expanded="true" />
-            <element signature="e#243#244#0" expanded="true" />
-            <element signature="e#277#278#0" expanded="true" />
-            <element signature="e#306#307#0" expanded="true" />
-            <element signature="e#334#335#0" expanded="true" />
-            <element signature="e#373#374#0" expanded="true" />
-            <element signature="e#407#408#0" expanded="true" />
-            <element signature="e#436#437#0" expanded="true" />
-            <element signature="e#464#465#0" expanded="true" />
-            <element signature="e#503#504#0" expanded="true" />
-            <element signature="e#537#538#0" expanded="true" />
-            <element signature="e#569#570#0" expanded="true" />
-            <element signature="e#597#598#0" expanded="true" />
-            <element signature="e#639#640#0" expanded="true" />
-            <element signature="e#673#674#0" expanded="true" />
-            <element signature="e#746#747#0" expanded="true" />
-            <element signature="e#766#767#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/tmall/util/ImageUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1273">
-          <caret line="67" column="1" selection-start-line="67" selection-start-column="1" selection-end-line="67" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/tmall/util/UploadedImageFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
-          <folding>
-            <element signature="e#214#215#0" expanded="true" />
-            <element signature="e#263#264#0" expanded="true" />
-            <element signature="e#297#298#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.1.3.RELEASE/spring-web-4.1.3.RELEASE.jar!/org/springframework/web/multipart/MultipartFile.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -1210,12 +1153,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/tmall/mapper/CategoryMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/listCategory.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+        <state relative-caret-position="312">
+          <caret line="48" column="55" lean-forward="true" selection-start-line="48" selection-start-column="55" selection-end-line="48" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/tmall/controller/CategoryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="51" column="68" selection-start-line="51" selection-start-column="68" selection-end-line="51" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/tmall/mapper/CategoryMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/tmall/pojo/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+          <folding>
+            <element signature="e#136#137#0" expanded="true" />
+            <element signature="e#163#164#0" expanded="true" />
+            <element signature="e#203#204#0" expanded="true" />
+            <element signature="e#258#259#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/tmall/service/impl/CategoryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#636#637#0" expanded="true" />
+            <element signature="e#680#681#0" expanded="true" />
+            <element signature="e#728#729#0" expanded="true" />
+            <element signature="e#757#758#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1230,33 +1217,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/tmall/service/impl/CategoryServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/tmall/test/TestTmall.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
+        <state relative-caret-position="380">
+          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/tmall/util/ImageUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#636#637#0" expanded="true" />
-            <element signature="e#680#681#0" expanded="true" />
-            <element signature="e#728#729#0" expanded="true" />
-            <element signature="e#757#758#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/listCategory.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/tmall/util/Page.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="48" column="55" lean-forward="true" selection-start-line="48" selection-start-column="55" selection-end-line="48" selection-end-column="76" />
+        <state relative-caret-position="-437">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/tmall/controller/CategoryController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/tmall/util/UploadedImageFile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="53" column="47" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
+        <state relative-caret-position="57">
+          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#186#187#0" expanded="true" />
+            <element signature="e#214#215#0" expanded="true" />
+            <element signature="e#263#264#0" expanded="true" />
+            <element signature="e#297#298#0" expanded="true" />
           </folding>
         </state>
       </provider>

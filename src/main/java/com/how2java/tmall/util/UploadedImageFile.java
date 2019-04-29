@@ -1,7 +1,7 @@
 package com.how2java.tmall.util;
 
 import org.springframework.web.multipart.MultipartFile;
-
+//这里的属性名称image必须和页面中的增加分类部分中的type="file"的name值保持一致。
 public class UploadedImageFile {
     MultipartFile image;
 

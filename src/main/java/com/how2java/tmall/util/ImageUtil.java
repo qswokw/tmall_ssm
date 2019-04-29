@@ -15,7 +15,7 @@ import java.io.File;
 import java.io.IOException;
 
 import javax.imageio.ImageIO;
-
+//处理图片工具类
 public class ImageUtil {
 
     public static BufferedImage change2jpg(File f) {

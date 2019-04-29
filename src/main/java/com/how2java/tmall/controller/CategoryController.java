@@ -37,15 +37,19 @@ public class CategoryController {
     @RequestMapping("admin_category_add")
     public String add(Category c, HttpSession session, UploadedImageFile uploadedImageFile) throws IOException {
         categoryService.add(c);
+        //获取资源路径
         File imageFolder=new File(session.getServletContext().getRealPath("img/category"));
         System.out.println(session.getServletContext().getRealPath("img/category"));
+        //通过id保存图片
         File file=new File(imageFolder,c.getId()+".jpg");
+        //category文件夹不存在则创建
         if(!file.getParentFile().exists())
             file.getParentFile().mkdirs();
+//        获取文件
         uploadedImageFile.getImage().transferTo(file);
         BufferedImage img = ImageUtil.change2jpg(file);
         ImageIO.write(img, "jpg", file);
-        return "redirect:/admin_category_list";
+        return "redirect:/admin_category_list";//注意此处加/和不加区别，不加是追加连接
     }
 
     @RequestMapping("admin_category_delete")
