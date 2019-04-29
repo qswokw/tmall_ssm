@@ -8,7 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7929a4c8-acf8-4965-9776-0186e071576e" name="Default" comment="测试pull">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/listCategory.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/listCategory.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -107,11 +106,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="listCategory.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="listCategory.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/listCategory.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1729">
-              <caret line="91" column="52" selection-start-line="91" selection-start-column="52" selection-end-line="91" selection-end-column="52" />
+            <state relative-caret-position="-1014">
+              <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Page.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/tmall/util/Page.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="278">
+              <caret line="56" column="20" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
+              <folding>
+                <element signature="e#176#177#0" expanded="true" />
+                <element signature="e#204#205#0" expanded="true" />
+                <element signature="e#243#244#0" expanded="true" />
+                <element signature="e#277#278#0" expanded="true" />
+                <element signature="e#306#307#0" expanded="true" />
+                <element signature="e#334#335#0" expanded="true" />
+                <element signature="e#373#374#0" expanded="true" />
+                <element signature="e#407#408#0" expanded="true" />
+                <element signature="e#436#437#0" expanded="true" />
+                <element signature="e#464#465#0" expanded="true" />
+                <element signature="e#503#504#0" expanded="true" />
+                <element signature="e#537#538#0" expanded="true" />
+                <element signature="e#569#570#0" expanded="true" />
+                <element signature="e#597#598#0" expanded="true" />
+                <element signature="e#639#640#0" expanded="true" />
+                <element signature="e#673#674#0" expanded="true" />
+                <element signature="e#746#747#0" expanded="true" />
+                <element signature="e#766#767#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -133,8 +161,8 @@
         <option value="Interface" />
         <option value="Tag Library Descriptor" />
         <option value="spring-beans.schema" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -169,6 +197,7 @@
         <option value="$PROJECT_DIR$/src/main/resources/mapper/CategoryMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/include/admin/listCategory.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/listCategory.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/how2java/tmall/util/Page.java" />
       </list>
     </option>
   </component>
@@ -339,6 +368,17 @@
               <item name="how2java" type="462c0819:PsiDirectoryNode" />
               <item name="tmall" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tmall_ssm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tmall_ssm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="how2java" type="462c0819:PsiDirectoryNode" />
+              <item name="tmall" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tmall_ssm" type="b2602c69:ProjectViewProjectNode" />
@@ -653,7 +693,7 @@
       <workItem from="1556418437994" duration="11710000" />
       <workItem from="1556457263598" duration="1914000" />
       <workItem from="1556459287877" duration="13000" />
-      <workItem from="1556525337170" duration="1899000" />
+      <workItem from="1556525337170" duration="3267000" />
     </task>
     <task id="LOCAL-00001" summary="4.28初始提交">
       <created>1556440904884</created>
@@ -687,7 +727,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23754000" />
+    <option name="totallyTimeSpent" value="25122000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -700,6 +740,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="768" y="0" width="768" height="834" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.20294708" side_tool="true" weight="0.60055476" />
@@ -720,10 +761,10 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" weight="0.32913166" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.76071924" weight="0.32913166" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7970529" visible="true" weight="0.3638928" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7970529" weight="0.3638928" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32913166" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.7966805" weight="0.27221438" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.016853932" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.7966805" visible="true" weight="0.27221438" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.36376405" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -748,13 +789,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="测试pull" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/include/admin/adminHeader.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/listCategory.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -1169,8 +1203,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/listCategory.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1729">
-          <caret line="91" column="52" selection-start-line="91" selection-start-column="52" selection-end-line="91" selection-end-column="52" />
+        <state relative-caret-position="-1014">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/tmall/util/Page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="56" column="20" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
+          <folding>
+            <element signature="e#176#177#0" expanded="true" />
+            <element signature="e#204#205#0" expanded="true" />
+            <element signature="e#243#244#0" expanded="true" />
+            <element signature="e#277#278#0" expanded="true" />
+            <element signature="e#306#307#0" expanded="true" />
+            <element signature="e#334#335#0" expanded="true" />
+            <element signature="e#373#374#0" expanded="true" />
+            <element signature="e#407#408#0" expanded="true" />
+            <element signature="e#436#437#0" expanded="true" />
+            <element signature="e#464#465#0" expanded="true" />
+            <element signature="e#503#504#0" expanded="true" />
+            <element signature="e#537#538#0" expanded="true" />
+            <element signature="e#569#570#0" expanded="true" />
+            <element signature="e#597#598#0" expanded="true" />
+            <element signature="e#639#640#0" expanded="true" />
+            <element signature="e#673#674#0" expanded="true" />
+            <element signature="e#746#747#0" expanded="true" />
+            <element signature="e#766#767#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
