@@ -11,4 +11,6 @@ public interface CategoryMapper {
     public int total();
 
     public void add(Category category);
+
+    public void delete(int id);
 }
