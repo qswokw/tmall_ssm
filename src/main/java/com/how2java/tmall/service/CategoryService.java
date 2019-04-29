@@ -12,4 +12,6 @@ public interface CategoryService {
     int total();
 
     void delete(int id);
+
+    Category get(int id);
 }

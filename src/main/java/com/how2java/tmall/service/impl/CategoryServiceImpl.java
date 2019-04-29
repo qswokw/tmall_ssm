@@ -29,6 +29,11 @@ public class CategoryServiceImpl implements CategoryService {
     }
 
     @Override
+    public Category get(int id) {
+        return categoryMapper.get(id);
+    }
+
+    @Override
     public int total() {
         return categoryMapper.total();
     }
