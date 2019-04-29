@@ -62,7 +62,7 @@
 <div class="panel panel-warning addDiv">
     <div class="panel-heading">新增分类</div>
     <div class="panel-body">
-        <form method="post" id="addForm" action="/admin_category_list" enctype="multipart/form-data">
+        <form method="post" id="addForm" action="admin_category_add" enctype="multipart/form-data">
             <table class="addTable">
                 <tr>
                     <td>分类名称</td>
