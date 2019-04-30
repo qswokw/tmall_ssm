@@ -1,5 +1,7 @@
 package com.how2java.tmall.controller;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.how2java.tmall.pojo.Category;
 import com.how2java.tmall.service.CategoryService;
 import com.how2java.tmall.util.ImageUtil;
@@ -27,8 +29,14 @@ public class CategoryController {
 
     @RequestMapping("admin_category_list")
     public String list(Model model,Page page) {
-        List<Category> cs = categoryService.list(page);
-        int total=categoryService.total();
+//        List<Category> cs = categoryService.list(page);
+//        int total=categoryService.total();
+//       使用分页插件分页,
+//        分页插件设置分页参数后，会存储到local线程,select方法调用后会被拦截器拦截，从本地线程中拿到参数重新组装sql语句，这就是为什么颠倒后不能实现分页了
+        PageHelper.offsetPage(page.getStart(),page.getCount());
+        List<Category> cs = categoryService.list();
+        int total = (int) new PageInfo<>(cs).getTotal();
+        System.out.println(total);
         page.setTotal(total);
         model.addAttribute("page",page);
         model.addAttribute("cs", cs);

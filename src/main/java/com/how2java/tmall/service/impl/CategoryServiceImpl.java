@@ -14,8 +14,8 @@ public class CategoryServiceImpl implements CategoryService {
     @Autowired
     CategoryMapper categoryMapper;
     @Override
-    public List<Category> list(Page page) {
-        return categoryMapper.list(page);
+    public List<Category> list() {
+        return categoryMapper.list();
     }
 
     @Override
@@ -38,8 +38,8 @@ public class CategoryServiceImpl implements CategoryService {
         categoryMapper.update(category);
     }
 
-    @Override
-    public int total() {
-        return categoryMapper.total();
-    }
+//    @Override
+//    public int total() {
+//        return categoryMapper.total();
+//    }
 }

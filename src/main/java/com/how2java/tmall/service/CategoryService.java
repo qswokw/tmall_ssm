@@ -6,10 +6,10 @@ import com.how2java.tmall.util.Page;
 import java.util.List;
 
 public interface CategoryService {
-    List<Category> list(Page page);
+    List<Category> list();
 
     void add(Category category);
-    int total();
+//    int total();
 
     void delete(int id);
 
