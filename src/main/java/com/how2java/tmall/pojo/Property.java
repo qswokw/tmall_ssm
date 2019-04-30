@@ -6,6 +6,16 @@ public class Property {
     private Integer cid;
 
     private String name;
+//    非数据库逆向生成，根据需要手动添加外键属性
+    private Category category;
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
+    }
 
     public Integer getId() {
         return id;
