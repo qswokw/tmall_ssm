@@ -15,7 +15,7 @@ import java.util.List;
 //只能执行一次，以后执行会覆盖掉mapper,pojo,xml 等文件上做的修改,所以进行修改确保万一
 public class MybatisGenerator {
     public static void main(String[] args) throws Exception {
-        String today = "2017-10-14";
+        String today = "2019-04-30";
 
         SimpleDateFormat sdf =new SimpleDateFormat("yyyy-MM-dd");
         Date now =sdf.parse(today);

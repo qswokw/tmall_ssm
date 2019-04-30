@@ -1,20 +1,21 @@
 package com.how2java.tmall.mapper;
 
 import com.how2java.tmall.pojo.Category;
-import com.how2java.tmall.util.Page;
-
+import com.how2java.tmall.pojo.CategoryExample;
 import java.util.List;
 
 public interface CategoryMapper {
-    public List<Category> list();
+    int deleteByPrimaryKey(Integer id);
 
-//    public int total();
+    int insert(Category record);
 
-    public void add(Category category);
+    int insertSelective(Category record);
 
-    public void delete(int id);
+    List<Category> selectByExample(CategoryExample example);
 
-    public Category get(int id);
+    Category selectByPrimaryKey(Integer id);
 
-    public void update(Category category);
+    int updateByPrimaryKeySelective(Category record);
+
+    int updateByPrimaryKey(Category record);
 }
