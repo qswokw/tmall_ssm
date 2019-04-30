@@ -15,4 +15,6 @@ public interface CategoryMapper {
     public void delete(int id);
 
     public Category get(int id);
+
+    public void update(Category category);
 }

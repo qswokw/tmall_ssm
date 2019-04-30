@@ -34,6 +34,11 @@ public class CategoryServiceImpl implements CategoryService {
     }
 
     @Override
+    public void update(Category category) {
+        categoryMapper.update(category);
+    }
+
+    @Override
     public int total() {
         return categoryMapper.total();
     }

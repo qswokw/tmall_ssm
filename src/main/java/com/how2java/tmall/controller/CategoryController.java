@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.imageio.ImageIO;
 import javax.servlet.http.HttpSession;
@@ -65,6 +66,20 @@ public class CategoryController {
     public String edit(int id,Model model) {
         Category c = categoryService.get(id);
         model.addAttribute("c", c);
-        return "admin.editCategory";
+        return "admin/editCategory";
+    }
+
+    @RequestMapping("admin_category_update")
+    public String update(Category category, HttpSession session, UploadedImageFile uploadedImageFile) throws IOException {
+        categoryService.update(category);
+        MultipartFile image = uploadedImageFile.getImage();
+        if (image != null && !image.isEmpty()) {
+            File imageFolder = new File(session.getServletContext().getRealPath("img/category"));
+            File file = new File(imageFolder, category.getId() + ".jpg");
+            image.transferTo(file);
+            BufferedImage img = ImageUtil.change2jpg(file);
+            ImageIO.write(img, "jpg", file);
+        }
+        return "redirect:/admin_category_list";
     }
 }
