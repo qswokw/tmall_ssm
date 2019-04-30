@@ -11,7 +11,8 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-//逆向工程核心代码，可在官网找到
+//逆向工程核心代码，可在官网找到,
+//只能执行一次，以后执行会覆盖掉mapper,pojo,xml 等文件上做的修改,所以进行修改确保万一
 public class MybatisGenerator {
     public static void main(String[] args) throws Exception {
         String today = "2017-10-14";

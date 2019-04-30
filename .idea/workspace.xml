@@ -6,7 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7929a4c8-acf8-4965-9776-0186e071576e" name="Default" comment="测试pull" />
+    <list default="true" id="7929a4c8-acf8-4965-9776-0186e071576e" name="Default" comment="测试pull">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/util/MybatisGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/util/MybatisGenerator.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -65,8 +67,12 @@
       <file leaf-file-name="MybatisGenerator.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/tmall/util/MybatisGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+            <state relative-caret-position="88">
+              <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#696#704#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -670,7 +676,7 @@
       <workItem from="1556525337170" duration="16048000" />
       <workItem from="1556590706337" duration="3036000" />
       <workItem from="1556593879847" duration="2115000" />
-      <workItem from="1556596018089" duration="1298000" />
+      <workItem from="1556596018089" duration="1396000" />
     </task>
     <task id="LOCAL-00001" summary="4.28初始提交">
       <created>1556440904884</created>
@@ -704,7 +710,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44352000" />
+    <option name="totallyTimeSpent" value="44450000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -739,8 +745,8 @@
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.76071924" weight="0.32913166" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7970529" weight="0.3557423" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32913166" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.7966805" visible="true" weight="0.22689076" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.55739975" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.7966805" visible="true" weight="0.22689076" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13416322" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -1145,8 +1151,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/tmall/util/MybatisGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        <state relative-caret-position="88">
+          <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#696#704#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
