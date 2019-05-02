@@ -4,7 +4,7 @@ public class Page {
     private int start;
     private int count;
     private int total;
-    //param可以用于储存一些url参数信息
+    //param可以用于储存一些url参数信息,用于分页限定条件
     private String param;
 
     private static final int defaultCount = 5;
