@@ -1,11 +1,14 @@
 package com.how2java.tmall.service.impl;
 
 import com.how2java.tmall.mapper.CategoryMapper;
+import com.how2java.tmall.mapper.ProductImageMapper;
 import com.how2java.tmall.mapper.ProductMapper;
 import com.how2java.tmall.mapper.PropertyMapper;
 import com.how2java.tmall.pojo.Category;
 import com.how2java.tmall.pojo.Product;
 import com.how2java.tmall.pojo.ProductExample;
+import com.how2java.tmall.pojo.ProductImage;
+import com.how2java.tmall.service.ProductImageService;
 import com.how2java.tmall.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -18,6 +21,8 @@ public class ProductServiceImp implements ProductService {
     ProductMapper productMapper;
     @Autowired
     CategoryMapper categoryMapper;
+    @Autowired
+    ProductImageService productImageService;
     @Override
     public void add(Product product) {
         productMapper.insert(product);
@@ -48,6 +53,7 @@ public class ProductServiceImp implements ProductService {
         productExample.setOrderByClause("id desc");
         List result=productMapper.selectByExample(productExample);
 //        setCategory(result);
+        setFirstProductImage(result);
         return result;
     }
 
@@ -62,5 +68,19 @@ public class ProductServiceImp implements ProductService {
     public void setCategory(Product p) {
         Category c = categoryMapper.selectByPrimaryKey(p.getCid());
         p.setCategory(c);
+    }
+
+    //增加图片属性
+    public void setFirstProductImage(Product p) {
+        List<ProductImage> pis = productImageService.list(p.getId(), ProductImageService.type_single);
+        if (!pis.isEmpty()) {
+            //取第一张
+            p.setFirstProductImage(pis.get(0));
+        }
+    }
+    public void setFirstProductImage(List<Product> ps) {
+        for (Product p : ps) {
+            setFirstProductImage(p);
+        }
     }
 }

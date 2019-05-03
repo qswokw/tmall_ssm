@@ -25,7 +25,16 @@ public class Product {
     public Category getCategory() {
         return category;
     }
+    //增加图片
+    private ProductImage FirstProductImage;
 
+    public ProductImage getFirstProductImage() {
+        return FirstProductImage;
+    }
+
+    public void setFirstProductImage(ProductImage firstProductImage) {
+        FirstProductImage = firstProductImage;
+    }
     public void setCategory(Category category) {
         this.category = category;
     }
