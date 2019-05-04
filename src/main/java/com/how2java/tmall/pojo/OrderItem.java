@@ -10,6 +10,16 @@ public class OrderItem {
     private Integer uid;
 
     private Integer number;
+    //增加Product字段用以显示图片
+    private Product product;
+
+    public Product getProduct() {
+        return product;
+    }
+
+    public void setProduct(Product product) {
+        this.product = product;
+    }
 
     public Integer getId() {
         return id;
