@@ -9,6 +9,17 @@ public class PropertyValue {
 
     private String value;
 
+    //增加property属性
+    private Property property;
+
+    public Property getProperty() {
+        return property;
+    }
+
+    public void setProperty(Property property) {
+        this.property = property;
+    }
+
     public Integer getId() {
         return id;
     }
