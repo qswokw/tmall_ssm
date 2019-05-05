@@ -32,10 +32,21 @@ public class UserServiceImpl implements UserService {
         return userMapper.selectByPrimaryKey(id);
     }
 
+
     @Override
     public List list() {
         UserExample example = new UserExample();
         example.setOrderByClause("id desc");
         return userMapper.selectByExample(example);
     }
+    @Override
+    public boolean isExist(String name) {
+        UserExample example = new UserExample();
+        example.createCriteria().andNameEqualTo(name);
+        List<User> users = userMapper.selectByExample(example);
+        if (users.isEmpty())
+            return false;
+        return true;
+    }
+
 }
