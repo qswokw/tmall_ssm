@@ -53,7 +53,7 @@ public class ForeController {
             String msg = "用户名已经被使用,不能使用";
             model.addAttribute("msg", msg);
             //参数里有User，他会隐式的“model.addAttribute("user", user),所以需要置为空
-//            model.addAttribute("user", null);
+            model.addAttribute("user", null);
             return "fore/register";
         }
         userService.add(user);
@@ -71,6 +71,12 @@ public class ForeController {
 
         }
         session.setAttribute("user", user);
+        return "redirect:forehome";
+    }
+
+    //    退出
+    public String logout(HttpSession session) {
+        session.removeAttribute("user");
         return "redirect:forehome";
     }
 }
