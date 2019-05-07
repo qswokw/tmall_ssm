@@ -133,4 +133,14 @@ public class ProductServiceImp implements ProductService {
             setSaleAndReviewNumber(p);
         }
     }
+
+    @Override
+    public List<Product> search(String keyword) {
+        ProductExample example = new ProductExample();
+        example.createCriteria().andNameLike("%" + keyword + "%");
+        List<Product> results = productMapper.selectByExample(example);
+        setFirstProductImage(results);
+        setCategory(results);
+        return results;
+    }
 }

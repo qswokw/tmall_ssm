@@ -15,12 +15,19 @@ public interface ProductService {
     Product get(int id);
 
     List list(int cid);
+
     //为home页类别导航填充
     public void fill(List<Category> categorys);
+
     public void fill(Category category);
 
     public void fillByRow(List<Category> categorys);
-//    增加为产品设置销量和评价数量的方法：
+
+    //    增加为产品设置销量和评价数量的方法：
     void setSaleAndReviewNumber(Product p);
+
     void setSaleAndReviewNumber(List<Product> ps);
+
+    //搜索产品
+    List<Product> search(String keyword);
 }
