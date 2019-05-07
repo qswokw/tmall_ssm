@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.util.HtmlUtils;
 
 import javax.servlet.http.HttpSession;
+import java.util.ArrayList;
 import java.util.List;
 
 //前台home页
@@ -38,7 +39,7 @@ public class ForeController {
 
     @RequestMapping("forehome")
     public String home(Model model) {
-        List<Category> cs= categoryService.list();
+        List<Category> cs = categoryService.list();
         productService.fill(cs);
         productService.fillByRow(cs);
         model.addAttribute("cs", cs);
@@ -85,7 +86,7 @@ public class ForeController {
     }
 
     @RequestMapping("foreproduct")
-    public String product( int pid, Model model) {
+    public String product(int pid, Model model) {
         Product p = productService.get(pid);
 
         List<ProductImage> productSingleImages = productImageService.list(p.getId(), ProductImageService.type_single);
@@ -102,39 +103,85 @@ public class ForeController {
         return "fore/product";
     }
 
-//    测试是否登录
+    //    测试是否登录
     @RequestMapping("forecheckLogin")
     @ResponseBody
-    public String checkLogin( HttpSession session) {
-        User user =(User)  session.getAttribute("user");
-        if(null!=user)
+    public String checkLogin(HttpSession session) {
+        User user = (User) session.getAttribute("user");
+        if (null != user)
             return "success";
         return "fail";
     }
-//模态登陆检测
+
+    //模态登陆检测
     @RequestMapping("foreloginAjax")
     @ResponseBody
-    public String loginAjax(@RequestParam("name") String name, @RequestParam("password") String password,HttpSession session) {
+    public String loginAjax(@RequestParam("name") String name, @RequestParam("password") String password, HttpSession session) {
         name = HtmlUtils.htmlEscape(name);
-        User user = userService.get(name,password);
+        User user = userService.get(name, password);
 
-        if(null==user){
+        if (null == user) {
             return "fail";
         }
         session.setAttribute("user", user);
         return "success";
     }
 
-//搜索
+    //搜索
     @RequestMapping("foresearch")
-    public String search( String keyword,Model model){
+    public String search(String keyword, Model model) {
 
-        PageHelper.offsetPage(0,20);
-        List<Product> ps= productService.search(keyword);
+        PageHelper.offsetPage(0, 20);
+        List<Product> ps = productService.search(keyword);
         productService.setSaleAndReviewNumber(ps);
-        model.addAttribute("ps",ps);
+        model.addAttribute("ps", ps);
         return "fore/searchResult";
     }
 
+//立即购买
+    @RequestMapping("forebuyone")
+    public String buyone(int pid,int num,HttpSession session) {
+        Product p = productService.get(pid);
+        User user = (User) session.getAttribute("user");
+        int oiid = 0;
+        //两种情况，已在购物车，未在购物车
+        List<OrderItem>  orderItems = orderItemService.listByUser(user.getId());
+        boolean found = false;
+        for (OrderItem oi : orderItems) {
+            //此处有变动
+            if (oi.getPid().intValue() == p.getId().intValue()) {
+                oi.setNumber(oi.getNumber() + num);
+                orderItemService.update(oi);
+                found = true;
+                oiid = oi.getId();
+                break;
+            }
+        }
+        if (!found) {
+            OrderItem oi = new OrderItem();
+            oi.setUid(user.getId());
+            oi.setNumber(num);
+            oi.setPid(p.getId());
+            orderItemService.add(oi);
+            oiid = oi.getId();
+        }
+        return "redirect:forebuy?oiid="+oiid;
+    }
 
+    //结算界面
+//    用字符串数组试图获取多个oiid，而不是int类型仅仅获取一个oiid? 因为根据购物流程环节与表关系，结算页面还需要显示在购物车中选中的多条OrderItem数据，所以为了兼容从购物车页面跳转过来的需求，要用字符串数组获取多个oiid
+    @RequestMapping("forebuy")
+    public String buy(Model model, String[] oiid, HttpSession session) {
+        List<OrderItem> orderItems = new ArrayList<>();
+        float total = 0;
+        for (String strid : oiid) {
+            int id = Integer.parseInt(strid);
+            OrderItem orderItem=orderItemService.get(id);
+            orderItems.add(orderItem);
+            total += orderItem.getNumber() * orderItem.getProduct().getPromotePrice();
+        }
+        session.setAttribute("ois", orderItems);
+        model.addAttribute("total", total);
+        return "fore/buy";
+    }
 }
