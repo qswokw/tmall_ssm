@@ -6,11 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7929a4c8-acf8-4965-9776-0186e071576e" name="Default" comment="测试pull">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/controller/ForeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/controller/ForeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/service/OrderItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/service/OrderItemService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/service/impl/OrderItemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/service/impl/OrderItemServiceImpl.java" afterDir="false" />
-    </list>
+    <list default="true" id="7929a4c8-acf8-4965-9776-0186e071576e" name="Default" comment="测试pull" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,8 +40,8 @@
       <file leaf-file-name="ForeController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/tmall/controller/ForeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="184" column="8" selection-start-line="184" selection-start-column="8" selection-end-line="184" selection-end-column="8" />
+            <state relative-caret-position="362">
+              <caret line="184" column="26" selection-start-line="184" selection-start-column="26" selection-end-line="184" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -784,7 +780,7 @@
       <workItem from="1556959978820" duration="12101000" />
       <workItem from="1557020884642" duration="11078000" />
       <workItem from="1557128495680" duration="8154000" />
-      <workItem from="1557194482079" duration="8438000" />
+      <workItem from="1557194482079" duration="9236000" />
     </task>
     <task id="LOCAL-00001" summary="4.28初始提交">
       <created>1556440904884</created>
@@ -818,7 +814,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108733000" />
+    <option name="totallyTimeSpent" value="109531000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -831,7 +827,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="762" y="0" width="779" height="839" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.20294708" side_tool="true" weight="0.60055476" />
@@ -852,10 +847,10 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" weight="0.32913166" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.76071924" weight="0.32913166" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7970529" visible="true" weight="0.37815127" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7970529" weight="0.37815127" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32871014" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.7966805" weight="0.18487395" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13692947" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.7966805" visible="true" weight="0.18487395" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18118949" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -1262,8 +1257,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/tmall/controller/ForeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="184" column="8" selection-start-line="184" selection-start-column="8" selection-end-line="184" selection-end-column="8" />
+        <state relative-caret-position="362">
+          <caret line="184" column="26" selection-start-line="184" selection-start-column="26" selection-end-line="184" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

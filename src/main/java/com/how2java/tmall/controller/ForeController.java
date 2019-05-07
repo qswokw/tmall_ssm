@@ -138,14 +138,14 @@ public class ForeController {
         return "fore/searchResult";
     }
 
-//立即购买
+    //立即购买
     @RequestMapping("forebuyone")
-    public String buyone(int pid,int num,HttpSession session) {
+    public String buyone(int pid, int num, HttpSession session) {
         Product p = productService.get(pid);
         User user = (User) session.getAttribute("user");
         int oiid = 0;
         //两种情况，已在购物车，未在购物车
-        List<OrderItem>  orderItems = orderItemService.listByUser(user.getId());
+        List<OrderItem> orderItems = orderItemService.listByUser(user.getId());
         boolean found = false;
         for (OrderItem oi : orderItems) {
             //此处有变动
@@ -165,7 +165,7 @@ public class ForeController {
             orderItemService.add(oi);
             oiid = oi.getId();
         }
-        return "redirect:forebuy?oiid="+oiid;
+        return "redirect:forebuy?oiid=" + oiid;
     }
 
     //结算界面
@@ -176,12 +176,41 @@ public class ForeController {
         float total = 0;
         for (String strid : oiid) {
             int id = Integer.parseInt(strid);
-            OrderItem orderItem=orderItemService.get(id);
+            OrderItem orderItem = orderItemService.get(id);
             orderItems.add(orderItem);
             total += orderItem.getNumber() * orderItem.getProduct().getPromotePrice();
         }
         session.setAttribute("ois", orderItems);
         model.addAttribute("total", total);
         return "fore/buy";
+    }
+
+    //加入购物车
+    @RequestMapping("foreaddCart")
+    @ResponseBody
+    public String addCart(int pid, int num, Model model,HttpSession session) {
+        Product p = productService.get(pid);
+        User user = (User) session.getAttribute("user");
+        int oiid = 0;
+        //两种情况，已在购物车，未在购物车
+        List<OrderItem> orderItems = orderItemService.listByUser(user.getId());
+        boolean found = false;
+        for (OrderItem oi : orderItems) {
+            //此处有变动
+            if (oi.getPid().intValue() == p.getId().intValue()) {
+                oi.setNumber(oi.getNumber() + num);
+                orderItemService.update(oi);
+                found = true;
+                break;
+            }
+        }
+        if (!found) {
+            OrderItem oi = new OrderItem();
+            oi.setUid(user.getId());
+            oi.setNumber(num);
+            oi.setPid(p.getId());
+            orderItemService.add(oi);
+        }
+        return "success";
     }
 }
