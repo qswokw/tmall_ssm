@@ -36,7 +36,7 @@ public class OrderServiceImpl implements OrderService{
 
     @Override
     public void update(Order c) {
-        orderMapper.updateByPrimaryKey(c);
+        orderMapper.updateByPrimaryKeySelective(c);
     }
 
     @Override
@@ -46,19 +46,24 @@ public class OrderServiceImpl implements OrderService{
     }
 
     @Override
-    public List list() {
+    public List<Order> list() {
         OrderExample example = new OrderExample();
         example.setOrderByClause("id desc");
         List<Order> result =orderMapper.selectByExample(example);
+        System.out.println("11111111111"+result.get(0).getUid());
         setUser(result);
         return result;
     }
     public void setUser(List<Order> result) {
-        for (Order o : result)
+        for (Order o : result){
+            System.out.println("22222"+o.getUid());
             setUser(o);
+        }
+
     }
 
     public void setUser(Order o) {
+        System.out.println("33333333"+o.getUid());
         int uid = o.getUid();
         User user = userService.get(uid);
         o.setUser(user);

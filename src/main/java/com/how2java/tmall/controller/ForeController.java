@@ -82,7 +82,7 @@ public class ForeController {
     }
 
     //    退出
-    @RequestMapping("foreout")
+    @RequestMapping("forelogout")
     public String logout(HttpSession session) {
         session.removeAttribute("user");
         return "redirect:forehome";
@@ -223,7 +223,6 @@ public class ForeController {
         User user = (User) session.getAttribute("user");
         List<OrderItem> ois = orderItemService.listByUser(user.getId());
         model.addAttribute("ois", ois);
-        System.out.println(ois.get(0).getProduct().getName());
         return "fore/cart";
     }
 
@@ -326,9 +325,9 @@ public class ForeController {
         Product p = order.getOrderItems().get(0).getProduct();
         List<Review> reviews = reviewService.list(p.getId());
         productService.setSaleAndReviewNumber(p);
-        model.addAttribute("p", "p");
-        model.addAttribute("o", "0");
-        model.addAttribute("review", reviews);
+        model.addAttribute("p",p);
+        model.addAttribute("o",order);
+        model.addAttribute("reviews", reviews);
         return "fore/review";
     }
     //提交评价
