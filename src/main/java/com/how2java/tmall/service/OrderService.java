@@ -20,5 +20,6 @@ public interface OrderService {
     Order get(int id);
     List list();
 
-    float add(Order c,List<OrderItem> ois);
+    float add(Order c, List<OrderItem> ois);
+    List list(int uid, String excludedStatus);
 }
