@@ -191,7 +191,7 @@ public class ForeController {
     //加入购物车
     @RequestMapping("foreaddCart")
     @ResponseBody
-    public String addCart(int pid, int num, Model model,HttpSession session) {
+    public String addCart(int pid, int num, Model model, HttpSession session) {
         Product p = productService.get(pid);
         User user = (User) session.getAttribute("user");
         int oiid = 0;
@@ -219,14 +219,15 @@ public class ForeController {
 
     //购物车页面
     @RequestMapping("forecart")
-    public String cart( Model model,HttpSession session) {
-        User user =(User)  session.getAttribute("user");
+    public String cart(Model model, HttpSession session) {
+        User user = (User) session.getAttribute("user");
         List<OrderItem> ois = orderItemService.listByUser(user.getId());
         model.addAttribute("ois", ois);
         System.out.println(ois.get(0).getProduct().getName());
         return "fore/cart";
     }
-//调整订单产品数量
+
+    //调整订单产品数量
     @RequestMapping("forechangeOrderItem")
     @ResponseBody
     public String changeOrderItem(HttpSession session, int pid, int number) {
@@ -247,8 +248,8 @@ public class ForeController {
     @RequestMapping("foredeleteOrderItem")
     @ResponseBody
     public String deleteOrderItem(HttpSession session, int oiid) {
-        User user =(User)  session.getAttribute("user");
-        if(null==user)
+        User user = (User) session.getAttribute("user");
+        if (null == user)
             return "fail";
         orderItemService.delete(oiid);
         return "success";
@@ -263,13 +264,13 @@ public class ForeController {
         order.setCreateDate(new Date());
         order.setUid(user.getId());
         order.setStatus(OrderService.waitPay);
-        List<OrderItem> ois= (List<OrderItem>)  session.getAttribute("ois");
+        List<OrderItem> ois = (List<OrderItem>) session.getAttribute("ois");
 
-        float total =orderService.add(order,ois);
-        return "redirect:forealipay?oid="+order.getId() +"&total="+total;
+        float total = orderService.add(order, ois);
+        return "redirect:forealipay?oid=" + order.getId() + "&total=" + total;
     }
 
-//    支付成功
+    //    支付成功
     @RequestMapping("forepayed")
     public String payed(int oid, float total, Model model) {
         Order order = orderService.get(oid);
@@ -278,7 +279,7 @@ public class ForeController {
         orderService.update(order);
         model.addAttribute("o", order);
         return "fore/payed";
-}
+    }
 
     //订单记录
     @RequestMapping("forebought")
@@ -289,4 +290,34 @@ public class ForeController {
         model.addAttribute("os", os);
         return "fore/bought";
     }
+
+    //    确认收货
+    @RequestMapping("foreconfirmPay")
+    public String confirmPay(Model model, int oid) {
+        Order o = orderService.get(oid);
+        orderItemService.fill(o);
+        model.addAttribute("o", o);
+        return "fore/confirmPay";
+    }
+//    确认支付
+    @RequestMapping("foreorderConfirmed")
+    public String orderConfirmed( Model model,int oid) {
+        Order o = orderService.get(oid);
+        o.setStatus(OrderService.waitReview);
+        o.setConfirmDate(new Date());
+        orderService.update(o);
+        return "fore/orderConfirmed";
+
+    }
+//    删除订单
+    @RequestMapping("foredeleteOrder")
+    @ResponseBody
+    public String deleteOrder( Model model,int oid){
+        Order o = orderService.get(oid);
+        o.setStatus(OrderService.delete);
+        orderService.update(o);
+        return "success";
+    }
+
 }
+
