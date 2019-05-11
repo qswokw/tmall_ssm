@@ -43,6 +43,7 @@ public class LoginInterceptor extends HandlerInterceptorAdapter {
             if (!Arrays.asList(noNeedAuthPage).contains(method)) {
                 User user = (User) session.getAttribute("user");
                 if (user == null) {
+                    //不能直接访问需要跳转
                     response.sendRedirect("loginPage");
                     return false;
                 }
