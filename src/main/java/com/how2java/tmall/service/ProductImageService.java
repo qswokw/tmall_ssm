@@ -15,4 +15,10 @@ public interface ProductImageService {
     List list(int pid, String type);
 
     List list();
+
+    //通过pid获取
+    List<ProductImage> getPis(int pid);
+
+    //通过pid和sort获取
+    ProductImage getnext(int pid, int sort);
 }

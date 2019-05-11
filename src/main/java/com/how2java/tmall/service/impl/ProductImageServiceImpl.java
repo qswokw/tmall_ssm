@@ -39,15 +39,32 @@ productImageMapper.updateByPrimaryKey(pi);
     public List list(int pid, String type) {
         ProductImageExample productImageExample = new ProductImageExample();
         productImageExample.createCriteria().andPidEqualTo(pid).andTypeEqualTo(type);
-        productImageExample.setOrderByClause("id desc");
+        productImageExample.setOrderByClause("sort asc");
         return productImageMapper.selectByExample(productImageExample);
     }
 
+//添加detail数据列及更改排序
     @Override
     public List list() {
         ProductImageExample example = new ProductImageExample();
         example.createCriteria().andTypeEqualTo(ProductImageService.type_detail);
         example.setOrderByClause("id desc");
         return productImageMapper.selectByExample(example);
+    }
+
+    @Override
+    public List<ProductImage> getPis(int pid) {
+        ProductImageExample example = new ProductImageExample();
+        example.createCriteria().andPidEqualTo(pid).andTypeEqualTo(ProductImageService.type_detail);
+        return productImageMapper.selectByExample(example);
+    }
+
+    @Override
+    public ProductImage getnext(int pid, int sort) {
+        System.out.println("QQQQQQQQQQ"+sort+"=="+pid);
+        ProductImageExample example = new ProductImageExample();
+        example.createCriteria().andPidEqualTo(pid).andSortEqualTo(sort);
+        System.out.println(productImageMapper.selectByExample(example));
+        return productImageMapper.selectByExample(example).get(0);
     }
 }
