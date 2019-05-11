@@ -1085,275 +1085,260 @@
       <ColNames>pid</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="269" parent="237" name="fk_orderitem_order">
-      <ColNames>oid</ColNames>
-      <Type>btree</Type>
-    </index>
-    <index id="270" parent="237" name="fk_orderitem_user">
+    <index id="269" parent="237" name="fk_orderitem_user">
       <ColNames>uid</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="271" parent="237" name="PRIMARY">
+    <key id="270" parent="237" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="272" parent="237" name="fk_orderitem_product">
+    <foreign-key id="271" parent="237" name="fk_orderitem_product">
       <ColNames>pid</ColNames>
       <RefSchemaName>tmall_ssm</RefSchemaName>
       <RefTableName>product</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="273" parent="237" name="fk_orderitem_order">
-      <ColNames>oid</ColNames>
-      <RefSchemaName>tmall_ssm</RefSchemaName>
-      <RefTableName>order_</RefTableName>
-      <RefColNames>id</RefColNames>
-    </foreign-key>
-    <foreign-key id="274" parent="237" name="fk_orderitem_user">
+    <foreign-key id="272" parent="237" name="fk_orderitem_user">
       <ColNames>uid</ColNames>
       <RefSchemaName>tmall_ssm</RefSchemaName>
       <RefTableName>user</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="275" parent="238" name="id">
+    <column id="273" parent="238" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="276" parent="238" name="name">
+    <column id="274" parent="238" name="name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="277" parent="238" name="subTitle">
+    <column id="275" parent="238" name="subTitle">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="278" parent="238" name="originalPrice">
+    <column id="276" parent="238" name="originalPrice">
       <Position>4</Position>
       <DataType>float|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="279" parent="238" name="promotePrice">
+    <column id="277" parent="238" name="promotePrice">
       <Position>5</Position>
       <DataType>float|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="280" parent="238" name="stock">
+    <column id="278" parent="238" name="stock">
       <Position>6</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="281" parent="238" name="cid">
+    <column id="279" parent="238" name="cid">
       <Position>7</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="282" parent="238" name="createDate">
+    <column id="280" parent="238" name="createDate">
       <Position>8</Position>
       <DataType>datetime|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="283" parent="238" name="fk_product_category">
+    <index id="281" parent="238" name="fk_product_category">
       <ColNames>cid</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="284" parent="238" name="PRIMARY">
+    <key id="282" parent="238" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="285" parent="238" name="fk_product_category">
+    <foreign-key id="283" parent="238" name="fk_product_category">
       <ColNames>cid</ColNames>
       <RefSchemaName>tmall_ssm</RefSchemaName>
       <RefTableName>category</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="286" parent="239" name="id">
+    <column id="284" parent="239" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="287" parent="239" name="pid">
+    <column id="285" parent="239" name="pid">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="288" parent="239" name="type">
+    <column id="286" parent="239" name="type">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="289" parent="239" name="fk_productimage_product">
+    <column id="287" parent="239" name="sort">
+      <Position>4</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="288" parent="239" name="fk_productimage_product">
       <ColNames>pid</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="290" parent="239" name="PRIMARY">
+    <key id="289" parent="239" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="291" parent="239" name="fk_productimage_product">
+    <foreign-key id="290" parent="239" name="fk_productimage_product">
       <ColNames>pid</ColNames>
       <RefSchemaName>tmall_ssm</RefSchemaName>
       <RefTableName>product</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="292" parent="240" name="id">
+    <column id="291" parent="240" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="293" parent="240" name="cid">
+    <column id="292" parent="240" name="cid">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="294" parent="240" name="name">
+    <column id="293" parent="240" name="name">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="295" parent="240" name="fk_property_category">
+    <index id="294" parent="240" name="fk_property_category">
       <ColNames>cid</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="296" parent="240" name="PRIMARY">
+    <key id="295" parent="240" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="297" parent="240" name="fk_property_category">
+    <foreign-key id="296" parent="240" name="fk_property_category">
       <ColNames>cid</ColNames>
       <RefSchemaName>tmall_ssm</RefSchemaName>
       <RefTableName>category</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="298" parent="241" name="id">
+    <column id="297" parent="241" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="299" parent="241" name="pid">
+    <column id="298" parent="241" name="pid">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="300" parent="241" name="ptid">
+    <column id="299" parent="241" name="ptid">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="301" parent="241" name="value">
+    <column id="300" parent="241" name="value">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="302" parent="241" name="fk_propertyvalue_product">
-      <ColNames>pid</ColNames>
-      <Type>btree</Type>
-    </index>
-    <index id="303" parent="241" name="fk_propertyvalue_property">
+    <index id="301" parent="241" name="fk_propertyvalue_property">
       <ColNames>ptid</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="304" parent="241" name="PRIMARY">
+    <key id="302" parent="241" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="305" parent="241" name="fk_propertyvalue_product">
-      <ColNames>pid</ColNames>
-      <RefSchemaName>tmall_ssm</RefSchemaName>
-      <RefTableName>product</RefTableName>
-      <RefColNames>id</RefColNames>
-    </foreign-key>
-    <foreign-key id="306" parent="241" name="fk_propertyvalue_property">
+    <foreign-key id="303" parent="241" name="fk_propertyvalue_property">
       <ColNames>ptid</ColNames>
       <RefSchemaName>tmall_ssm</RefSchemaName>
       <RefTableName>property</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="307" parent="242" name="id">
+    <column id="304" parent="242" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="308" parent="242" name="content">
+    <column id="305" parent="242" name="content">
       <Position>2</Position>
       <DataType>varchar(4000)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="309" parent="242" name="uid">
+    <column id="306" parent="242" name="uid">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="310" parent="242" name="pid">
+    <column id="307" parent="242" name="pid">
       <Position>4</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="311" parent="242" name="createDate">
+    <column id="308" parent="242" name="createDate">
       <Position>5</Position>
       <DataType>datetime|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="312" parent="242" name="fk_review_user">
+    <index id="309" parent="242" name="fk_review_user">
       <ColNames>uid</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="313" parent="242" name="fk_review_product">
+    <index id="310" parent="242" name="fk_review_product">
       <ColNames>pid</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="314" parent="242" name="PRIMARY">
+    <key id="311" parent="242" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="315" parent="242" name="fk_review_user">
+    <foreign-key id="312" parent="242" name="fk_review_user">
       <ColNames>uid</ColNames>
       <RefSchemaName>tmall_ssm</RefSchemaName>
       <RefTableName>user</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="316" parent="242" name="fk_review_product">
+    <foreign-key id="313" parent="242" name="fk_review_product">
       <ColNames>pid</ColNames>
       <RefSchemaName>tmall_ssm</RefSchemaName>
       <RefTableName>product</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="317" parent="243" name="id">
+    <column id="314" parent="243" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="318" parent="243" name="name">
+    <column id="315" parent="243" name="name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="319" parent="243" name="password">
+    <column id="316" parent="243" name="password">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="320" parent="243" name="PRIMARY">
+    <key id="317" parent="243" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>

@@ -42,4 +42,12 @@ productImageMapper.updateByPrimaryKey(pi);
         productImageExample.setOrderByClause("id desc");
         return productImageMapper.selectByExample(productImageExample);
     }
+
+    @Override
+    public List list() {
+        ProductImageExample example = new ProductImageExample();
+        example.createCriteria().andTypeEqualTo(ProductImageService.type_detail);
+        example.setOrderByClause("id desc");
+        return productImageMapper.selectByExample(example);
+    }
 }

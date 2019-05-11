@@ -5,6 +5,7 @@
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="pid" jdbcType="INTEGER" property="pid" />
     <result column="type" jdbcType="VARCHAR" property="type" />
+    <result column="sort" jdbcType="INTEGER" property="sort" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -36,7 +37,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    id, pid, type
+    id, pid, type, sort
   </sql>
   <select id="selectByExample" parameterType="com.how2java.tmall.pojo.ProductImageExample" resultMap="BaseResultMap">
     select
@@ -64,8 +65,10 @@
     where id = #{id,jdbcType=INTEGER}
   </delete>
   <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.how2java.tmall.pojo.ProductImage" useGeneratedKeys="true">
-    insert into productimage (pid, type)
-    values (#{pid,jdbcType=INTEGER}, #{type,jdbcType=VARCHAR})
+    insert into productimage (pid, type, sort
+      )
+    values (#{pid,jdbcType=INTEGER}, #{type,jdbcType=VARCHAR}, #{sort,jdbcType=INTEGER}
+      )
   </insert>
   <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.how2java.tmall.pojo.ProductImage" useGeneratedKeys="true">
     insert into productimage
@@ -76,6 +79,9 @@
       <if test="type != null">
         type,
       </if>
+      <if test="sort != null">
+        sort,
+      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       <if test="pid != null">
@@ -83,6 +89,9 @@
       </if>
       <if test="type != null">
         #{type,jdbcType=VARCHAR},
+      </if>
+      <if test="sort != null">
+        #{sort,jdbcType=INTEGER},
       </if>
     </trim>
   </insert>
@@ -95,13 +104,17 @@
       <if test="type != null">
         type = #{type,jdbcType=VARCHAR},
       </if>
+      <if test="sort != null">
+        sort = #{sort,jdbcType=INTEGER},
+      </if>
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.how2java.tmall.pojo.ProductImage">
     update productimage
     set pid = #{pid,jdbcType=INTEGER},
-      type = #{type,jdbcType=VARCHAR}
+      type = #{type,jdbcType=VARCHAR},
+      sort = #{sort,jdbcType=INTEGER}
     where id = #{id,jdbcType=INTEGER}
   </update>
 </mapper>

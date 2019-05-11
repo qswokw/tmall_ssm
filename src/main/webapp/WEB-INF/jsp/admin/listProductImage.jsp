@@ -119,6 +119,8 @@
                         <tr class="success">
                             <th>ID</th>
                             <th>产品详情图片缩略图</th>
+                            <th>上移</th>
+                            <th>下移</th>
                             <th>删除</th>
                         </tr>
                         </thead>
@@ -129,6 +131,8 @@
                                 <td>
                                     <a title="点击查看原图" href="img/productDetail/${pi.id}.jpg"><img height="50px" src="img/productDetail/${pi.id}.jpg"></a>
                                 </td>
+                                <td><a href="admin_productImage_changsort?id=${pi.id}&sort=0"><span class="glyphicon glyphicon-triangle-top"></span></a></td>
+                                <td><a href="admin_productImage_changsort?id=${pi.id}&sort=1"><span class="glyphicon glyphicon-triangle-bottom"></span></a></td>
                                 <td><a deleteLink="true"
                                        href="admin_productImage_delete?id=${pi.id}"><span
                                         class="     glyphicon glyphicon-trash"></span></a></td>

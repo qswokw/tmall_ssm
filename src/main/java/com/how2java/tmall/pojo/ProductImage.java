@@ -7,6 +7,8 @@ public class ProductImage {
 
     private String type;
 
+    private Integer sort;
+
     public Integer getId() {
         return id;
     }
@@ -29,5 +31,13 @@ public class ProductImage {
 
     public void setType(String type) {
         this.type = type == null ? null : type.trim();
+    }
+
+    public Integer getSort() {
+        return sort;
+    }
+
+    public void setSort(Integer sort) {
+        this.sort = sort;
     }
 }
